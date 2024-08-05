@@ -6,6 +6,10 @@
     flex-direction: column;
     align-items: center;
     padding: 20px 10px;
+    position:fixed;
+    top: 10vh;
+    width: 15vw;
+    height: 90vh;
 }
 
 .sidebar ul {

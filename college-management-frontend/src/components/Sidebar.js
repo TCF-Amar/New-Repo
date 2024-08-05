@@ -1,15 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";  
 import "./css/Sidebar.css"; // Optional: Separate CSS file for sidebar styling
 
 const Sidebar = () => {
   return (
-    <div className="sidebar fixed top-14 w-52 h-screen">
+    <div className="sidebar ">
       <ul>
-        <li>Dashboard</li>
-        <li>Students</li>
-        <li>Employees</li>
-        <li>Courses</li>
-        <li>Settings</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/students">Students</Link>
+        </li>
+        <li>
+          <Link to="/employee">Employee</Link>
+        </li>
+        <li>
+          <Link to="/courses">Courses</Link>
+        </li>
       </ul>
     </div>
   );
